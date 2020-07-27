@@ -24,7 +24,7 @@ ARGV . reemplace [ "archivo2" , "archivo3" ]
  ARGF . read       # Devuelve el contenido de file2 y file3
 
 
- ### Thursday 24, July 2020 *[ArgumentoError]*
+ ### Friday 24, July 2020 *[ArgumentoError]*
 
  Raised when the arguments are wrong and there isn't a more specific Exception class.
 
@@ -41,7 +41,7 @@ raises the exception:
 
 ArgumentError: negative array size
 
-### Thursday 27, July 2020 *[Array]*
+### Monday 27, July 2020 *[Array]*
 
 Array
 Arrays are ordered, integer-indexed collections of any object.
