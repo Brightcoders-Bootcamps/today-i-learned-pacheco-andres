@@ -22,3 +22,33 @@ ARGV . reemplazar [ "archivo1" ]
 ARGV            # => [] 
 ARGV . reemplace [ "archivo2" , "archivo3" ]
  ARGF . read       # Devuelve el contenido de file2 y file3
+
+
+ ### Thursday 24, July 2020 *[ArgumentoError]*
+
+ Raised when the arguments are wrong and there isn't a more specific Exception class.
+
+Ex: passing the wrong number of arguments
+
+[1, 2, 3].first(4, 5)
+raises the exception:
+
+ArgumentError: wrong number of arguments (given 2, expected 1)
+Ex: passing an argument that is not acceptable:
+
+[1, 2, 3].first(-4)
+raises the exception:
+
+ArgumentError: negative array size
+
+### Thursday 27, July 2020 *[Array]*
+
+Array
+Arrays are ordered, integer-indexed collections of any object.
+
+Array indexing starts at 0, as in C or Java. A negative index is assumed to be relative to the end of the array—that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.
+
+Creating Arrays¶ ↑
+A new array can be created by using the literal constructor []. Arrays can contain different types of objects. For example, the array below contains an Integer, a String and a Float:
+
+ary = [1, "two", 3.0] #=> [1, "two", 3.0]
