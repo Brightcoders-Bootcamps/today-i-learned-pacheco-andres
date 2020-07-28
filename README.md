@@ -53,7 +53,7 @@ A new array can be created by using the literal constructor []. Arrays can conta
 
 ary = [1, "two", 3.0] #=> [1, "two", 3.0]
 
-### Tuesday 2, July 2020 *[BasicObject]*
+### Tuesday 28, July 2020 *[BasicObject]*
 
 BasicObject is the parent class of all classes in Ruby. It's an explicit blank class.
 
