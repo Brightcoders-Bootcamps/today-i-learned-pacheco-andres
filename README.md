@@ -52,3 +52,14 @@ Creating Arrays¶ ↑
 A new array can be created by using the literal constructor []. Arrays can contain different types of objects. For example, the array below contains an Integer, a String and a Float:
 
 ary = [1, "two", 3.0] #=> [1, "two", 3.0]
+
+### Tuesday 2, July 2020 *[BasicObject]*
+
+BasicObject is the parent class of all classes in Ruby. It's an explicit blank class.
+
+BasicObject can be used for creating object hierarchies independent of Ruby's object hierarchy, proxy objects like the Delegator class, or other uses where namespace pollution from Ruby's methods and classes must be avoided.
+
+To avoid polluting BasicObject for other users an appropriately named subclass of BasicObject should be created instead of directly modifying BasicObject:
+ ==========
+class MyObjectSystem < BasicObject
+end
